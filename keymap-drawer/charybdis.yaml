@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
   - {t: BASE, h: toggle}
@@ -36,9 +37,9 @@ layers:
   - {t: ., h: MEH}
   - /
   - DEV TOOLS
-  - {t: BACK SPACE, h: NUM}
-  - L CLK
   - SCRL SLOW
+  - L CLK
+  - {t: BACK SPACE, h: NUM}
   - {t: RETURN, h: MOUSE}
   - {t: SPACE, h: SYM}
   NUM:
@@ -78,9 +79,9 @@ layers:
   - {t: '3', h: F3}
   - {t: '=', h: DEV TOOLS}
   - ''
-  - {type: held}
   - ''
-  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
   - '0'
   - {t: ▽, type: trans}
   NAV:
