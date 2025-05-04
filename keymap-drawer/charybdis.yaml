@@ -2,53 +2,53 @@ layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
   - {t: BASE, h: toggle}
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
+  - {t: Q, h: Ctl+Sft+ LALT}
+  - {t: W, h: ESC}
+  - F
   - P
+  - G
+  - J
+  - L
+  - U
+  - Y
+  - ;
   - L_BASE L_PHOTO L_GAME
   - {t: TAB, h: LCMD}
-  - {t: A, h: NAV}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LEFT SHIFT}
-  - G
-  - H
-  - {t: J, h: LEFT SHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: LCMD}
+  - A
+  - {t: S, h: LALT}
+  - {t: R, h: LCTRL}
+  - {t: T, h: LGUI}
+  - '&td_rp'
+  - '&td_rbck'
+  - {t: N, h: LGUI}
+  - {t: E, h: LCTRL}
+  - {t: I, h: LALT}
+  - {t: O, h: RSHFT}
   - DEL
   - SEARCH
-  - Z
-  - {t: X, h: MEH}
-  - {t: C, h: HYPER}
-  - V
-  - B
-  - N
-  - M
-  - {t: ',', h: HYPER}
-  - {t: ., h: MEH}
+  - {t: Z, h: LSHFT}
+  - X
+  - C
+  - '&td_vt'
+  - '&td_rbc'
+  - '&td_rgt'
+  - H
+  - ','
+  - .
   - /
   - DEV TOOLS
   - SCRL SLOW
-  - L CLK
-  - {t: BACK SPACE, h: NUM}
-  - {t: RETURN, h: MOUSE}
-  - {t: SPACE, h: SYM}
+  - '&td_lt'
+  - {t: SPACE, h: NUM}
+  - {t: RETURN, h: NAV}
+  - {t: BACK SPACE, h: SYM}
   NUM:
   - {t: ▽, type: trans}
+  - CAPS
+  - VOL UP
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - BRI UP
   - /
   - {t: '7', h: F7}
   - {t: '8', h: F8}
@@ -56,11 +56,11 @@ layers:
   - {t: '-', h: F10}
   - ''
   - {t: ▽, type: trans}
-  - ''
-  - ''
+  - Gui+ Z
+  - VOL DN
   - ''
   - BACK SPACE
-  - ''
+  - BRI DN
   - '*'
   - {t: '4', h: F4}
   - {t: '5', h: F5}
@@ -68,12 +68,12 @@ layers:
   - {t: +, h: F11}
   - {t: ▽, type: trans}
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - .
+  - MUTE
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
+  - TAB
+  - '0'
   - {t: '1', h: F1}
   - {t: '2', h: F2}
   - {t: '3', h: F3}
@@ -82,91 +82,91 @@ layers:
   - ''
   - ''
   - {type: held}
-  - '0'
-  - {t: ▽, type: trans}
+  - .
+  - ','
   NAV:
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DARW
+  - RARW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UARW
+  - LARW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
-  - PANE ◀
-  - PANE ▲
-  - PANE ▼
-  - PANE ▶
-  - ''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - VSPLIT
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - HSPLIT
-  - HOME
-  - PG DN
-  - PG UP
-  - END
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   SYM:
   - ''
-  - +
-  - '{'
-  - '}'
-  - '-'
-  - ':'
-  - \
   - '`'
-  - $
-  - ^
   - ''''
-  - ''
-  - ''
-  - {t: '!', h: LCMD}
-  - {t: (, h: LEFT ALT}
-  - {t: ), h: LCTRL}
-  - {t: SPACE, h: LEFT SHIFT}
-  - '~'
-  - /
-  - {t: SPACE, h: LEFT SHIFT}
-  - {t: <, h: LCTRL}
-  - {t: '>', h: LEFT ALT}
-  - '#'
-  - ''
-  - ''
-  - '='
-  - '['
-  - ']'
-  - _
-  - ;
-  - '|'
-  - '*'
-  - '&'
+  - '"'
+  - $
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '%'
+  - ^
+  - '&'
+  - '*'
+  - ''
+  - ''
+  - '~'
+  - '!'
   - '@'
+  - '#'
+  - (
+  - '['
+  - '|'
+  - '-'
+  - '='
+  - '?'
+  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '{'
+  - Sft+ ,
+  - {t: ▽, type: trans}
+  - _
+  - +
+  - \
   - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   GAME: ['1', TAB, Q, W, E, R, '', '', '', '', '', '', '2', LCTRL, A, S, D, F, '', '', '', '', '', '', '3', LSHFT, Z, X, C, V, '', '', '', '', '', '', '', SPACE,
     LEFT ALT, '', '']
@@ -294,7 +294,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: RETURN, type: held}
+  - RETURN
   - {t: ▽, type: trans}
   SLOW:
   - {t: ▽, type: trans}
@@ -381,12 +381,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [17, 18]
-  k: CAPS WORD
-  l: [BASE]
-- p: [28, 37]
-  k: M CLK
-- p: [16, 37]
-  k: R CLK
-- p: [38, 39]
+- p: [4, 5]
   k: L_BASE L_EXTRA
