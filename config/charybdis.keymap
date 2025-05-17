@@ -69,9 +69,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <175>; // triggers the hold behavior when the tapping-term-ms has expired
-            quick-tap-ms = <150>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
-            require-prior-idle-ms = <185>; // like quick-tap-ms however it will apply for any non-modifier key pressed before it
+            tapping-term-ms = <185>; // triggers the hold behavior when the tapping-term-ms has expired
+            quick-tap-ms = <160>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
+            require-prior-idle-ms = <195>; // like quick-tap-ms however it will apply for any non-modifier key pressed before it
             bindings = <&kp>, <&kp>;  // hold, tap
         };
 
@@ -98,43 +98,42 @@
         td_clk_scrl: td_click_or_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <195>;
             bindings = <&mkp RCLK>, <&mo 9>;  // tap/hold, double_tap
         };
 
         td_rbck: td_right_bracket {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
+            tapping-term-ms = <195>;
             bindings = <&kp M>, <&kp RIGHT_BRACKET>;
         };
         
         td_rp: td_right_paren {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
+            tapping-term-ms = <195>;
             bindings = <&kp D>, <&kp RIGHT_PARENTHESIS>;
         };
       
         td_rbc: td_right_brace {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
+            tapping-term-ms = <195>;
             bindings = <&kp B>, <&kp RIGHT_BRACE>;
         };
               
         td_rgt: td_right_greater_than {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
+            tapping-term-ms = <195>;
             bindings = <&kp K>, <&kp GREATER_THAN>;
-        };
-     
-        td_lt: td_lclk_tab {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&mkp LCLK>, <&kp TAB>;
         };
 
         td_vt: td_v_tab {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
+            tapping-term-ms = <195>;
             bindings = <&kp V>, <&kp TAB>;
         };
 
@@ -219,17 +218,17 @@
     &kp C_AC_SEARCH   &hm LSHFT Z            &kp X                     &kp C                        &td_vt              &td_rbc             &td_rgt            &kp H                   &kp COMMA                     &kp DOT                         &kp FSLH              &kp F12
 // ╰────────────────┴──────────────────┴─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┴──────────────────────────────┴────────────────────────┴──────────────╯
                                                                                    &td_cursor       &mkp LCLK        &lt 1 SPACE       &lt 2 RETURN     &lt 3 BACKSPACE
-                                                                              // ╰─────────────┴──────────────────┴──────────────────╯  ╰────────────────┴─────────────────╯
+                                                                              // ╰─────────────┴──────────────────┴─────────────────╯  ╰────────────────┴─────────────────╯
             >;
         };
         
 
         NUM {
             bindings = <
-&trans   &kp CAPS      &kp C_VOL_UP   &none      &none          &kp C_BRI_UP    &kp SLASH  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm F10 MINUS  &none
-&trans   &kp LG(Z)     &kp C_VOL_DN   &none      &kp BACKSPACE  &kp C_BRI_DN    &kp ASTRK  &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 PLUS   &trans
-&none    &kp C_MUTE    &kp LG(X)      &kp LG(C)  &kp LG(V)      &kp TAB          &kp N0     &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F12 EQUAL  &none
-                                      &none      &none          &none           &kp DOT    &kp COMMA
+&none    &kp CAPS      &none          &kp COMMA  &kp DOT        &none            &kp SLASH  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm F10 MINUS  &none
+&none    &kp LG(Z)     &none         &none      &kp BACKSPACE  &none            &kp ASTRK  &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 PLUS   &none
+&none    &none         &kp LG(X)      &kp LG(C)  &kp LG(V)      &kp LG(TAB)      &kp N0     &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F12 EQUAL  &none
+                                    &kp RETURN      &none       &none            &trans    &trans
           //                     ╰─────────────┴─────────────┴────x─────╯      ╰─────────┴──────────╯
             >;
         };
@@ -238,11 +237,11 @@
         NAV {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
- &none       &trans     &trans     &trans    &trans     &trans        &trans     &trans       &trans     &trans    &trans        &none 
+ &none       &trans  &kp C_VOL_UP   &trans    &trans   &kp C_BRI_UP     &trans     &trans       &trans     &trans    &trans        &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
- &none        &trans     &trans     &trans    &trans    &trans        &kp DARW   &kp RARW    &trans     &trans     &trans       &none 
+ &none        &trans &kp C_VOL_DN    &trans    &trans  &kp C_BRI_DN     &kp DARW   &kp RARW    &trans     &trans     &trans       &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
- &none        &trans     &trans     &trans    &trans    &trans        &kp UARW   &kp LARW     &trans     &trans     &trans      &none 
+ &none        &trans  &kp C_MUTE    &trans    &trans    &trans        &kp UARW   &kp LARW     &trans     &trans     &trans      &none 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                    &none     &trans     &trans         &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰────x─────┴──────────╯
