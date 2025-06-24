@@ -49,6 +49,48 @@
                 ;
         };
 
+
+        glog: glog { // git log --grep= , -S
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <20>;
+bindings = <
+    &macro_tap
+    &kp G &kp I &kp T &kp SPACE
+    &kp L &kp O &kp G &kp SPACE
+    &kp MINUS &kp MINUS &kp G &kp R &kp E &kp P &kp E &kp EQUAL
+    &kp SPACE &kp COMMA &kp SPACE
+    &kp MINUS &kp S
+>;
+        };
+
+        ghard: ghard { // git reset --hard
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <20>;
+    bindings = <
+        &macro_tap
+        &kp G &kp I &kp T &kp SPACE
+        &kp R &kp E &kp S &kp E &kp T &kp SPACE
+        &kp MINUS &kp MINUS &kp H &kp A &kp R &kp D
+    >;
+        };
+
+        gcheckout: gcheckou { // git checkout
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <20>;
+    bindings = <
+        &macro_tap
+        &kp G &kp I &kp T &kp SPACE
+        &kp C &kp H &kp E &kp C &kp K &kp O &kp U &kp T
+    >;
+
+        };
+
         gcm: gcm { // git commit WIP
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;

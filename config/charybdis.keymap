@@ -255,7 +255,8 @@
         NUM {
             bindings = <
 &none    &kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &kp SLASH  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm F10 MINUS  &none
-&none    &kp LG(Z)     &gswitch       &ghard         &gcheckout      &kp BACKSPACE     &kp ASTRK  &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 PLUS   &none
+&none    &kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &kp ASTRK  &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 PLUS   &none
+
 &none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &kp N0     &hm F1 N1  &td_2c     &td_3d     &hm F12 EQUAL  &none
                                       &kp RETURN     &none           &none             &trans     &trans
           //                      ╰────────────────┴────────────────┴───────x─────╯   ╰─────────┴──────────╯
