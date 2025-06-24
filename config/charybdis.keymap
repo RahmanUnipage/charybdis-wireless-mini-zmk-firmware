@@ -80,6 +80,13 @@
             #binding-cells = <0>;
             bindings = <&lt 9 ESC>, <&mkp RCLK>; // hold, tap, double_tap
         };
+
+        
+        td_clk: td_click { //&mkp LCLK 
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&lt 9 ESC>, <&mkp RCLK>; // hold, tap, double_tap
+        };
         
         hm_right: homerow_mod_right {
             compatible = "zmk,behavior-hold-tap";
