@@ -86,10 +86,10 @@
 
         BASE {
             bindings = <
-&kp TAB                        &kp Q  &kp W  &kp E         &kp R      &kp T          &kp Y      &kp U          &kp I      &kp O    &kp P          &kp LEFT_BRACKET
-&mt LEFT_SHIFT LA(LEFT_SHIFT)  &kp A  &kp S  &kp D         &kp F      &kp G          &kp H      &kp J          &kp K      &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp LEFT_CONTROL               &kp Z  &kp X  &kp C         &kp V      &kp B          &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_BRACKET
-                                             &kp LEFT_WIN  &mkp LCLK  &lt 1 SPACE    &kp ENTER  &kp BACKSPACE
+&lt 1 TAB                      &kp Q  &kp W  &kp E                  &kp R      &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&mt LEFT_SHIFT LA(LEFT_SHIFT)  &kp A  &kp S  &kp D                  &kp F      &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&kp LEFT_CONTROL               &kp Z  &kp X  &kp C                  &kp V      &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_BRACKET
+                                             &mt LEFT_WIN LEFT_WIN  &mkp LCLK  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
         };
 
