@@ -227,7 +227,7 @@
         BASE {
             bindings = <
 // ╭────────────────┬──────────────────┬─────────────────────────┬─────────────────────────────┬──────────────────┬──────────────────╮  ╭────────────────┬─────────────────┬──────────────────────────────────┬──────────────────────────────┬────────────────────────┬──────────────╮
-    &to 0           &mt LC(LS(LALT)) Q       &hm ESC W                    &kp F                       &kp P              &kp G              &kp J            &kp L                   &kp U                         &kp Y                           &kp SEMI               &td_layers
+    &to 0           &mt LC(LS(LALT)) Q       &hm ESC W                    &kp F                       &kp P              &kp G              &kp J            &kp L                   &hm LG(F) U                      &hm LG(R) Y                &hm LG(S) SEMI          &td_layers
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
     &hm LCMD TAB      &kp A                  &hm LALT S                &hm LCTRL R                 &hm_s LGUI T        &hm LPAR D           &hm LBKT M     &hm_right LGUI N          &hm_right LCTRL E             &hm_right LALT I                &kp O                  &kp DEL
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
@@ -244,7 +244,7 @@
 &none    &kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &kp SLASH  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm F10 MINUS  &none
 &none    &kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &kp ASTRK  &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 PLUS   &none
 
-&none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &kp N0     &hm F1 N1  &td_2c     &td_3d     &hm F12 EQUAL  &none
+&none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &kp N0     &hm F1 N1  &hm COMMA N2 &hm DOT N3 &hm F12 EQUAL  &none
                                       &kp RETURN     &none           &none             &trans     &trans
           //                      ╰────────────────┴────────────────┴───────x─────╯   ╰─────────┴──────────╯
             >;
@@ -256,9 +256,9 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
  &none       &trans  &kp C_VOL_UP   &trans    &trans   &kp C_BRI_UP    &trans     &trans      &trans     &trans     &trans    &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
- &none       &trans  &kp C_VOL_DN   &HSplit   &VSplit  &kp C_BRI_DN    &kp DARW   &kp RARW    &trans     &trans     &trans    &none 
+ &none       &trans  &kp C_VOL_DN   &HSplit   &VSplit  &kp C_BRI_DN    &kp DARW   &kp RARW   &kp LG(A) &kp LG(Z)   &trans     &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
- &none       &trans  &kp C_MUTE    &trans     &trans    &trans         &kp UARW   &kp LARW    &shrug     &trans     &trans    &none 
+ &none       &trans  &kp C_MUTE    &trans     &trans    &trans         &kp UARW   &kp LARW  &kp LG(V)   &kp LG(C)  &kp LG(X)   &none 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                    &none     &trans     &trans         &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰────x─────┴──────────╯
