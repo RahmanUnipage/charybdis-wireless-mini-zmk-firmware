@@ -2,124 +2,124 @@ layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
   - {t: BASE, h: toggle}
-  - {t: Q, h: Ctl+Sft+ LALT}
-  - {t: W, h: ESC}
-  - F
-  - P
+  - Q
+  - W
+  - {t: F, h: Ctl+Sft+ LALT}
+  - {t: P, h: ESC}
   - G
   - J
   - L
-  - U
-  - Y
-  - ;
+  - {t: U, h: Gui+ F}
+  - {t: Y, h: Gui+ R}
+  - {t: ;, h: Gui+ S}
   - L_BASE L_PHOTO L_GAME
   - {t: TAB, h: LCMD}
   - A
   - {t: S, h: LALT}
   - {t: R, h: LCTRL}
   - {t: T, h: LGUI}
-  - '&td_rp'
-  - '&td_rbck'
+  - {t: D, h: (}
+  - {t: M, h: '['}
   - {t: N, h: LGUI}
   - {t: E, h: LCTRL}
   - {t: I, h: LALT}
-  - {t: O, h: RSHFT}
+  - O
   - DEL
   - SEARCH
   - {t: Z, h: LSHFT}
   - X
   - C
   - '&td_vt'
-  - '&td_rbc'
-  - '&td_rgt'
+  - {t: B, h: '{'}
+  - {t: K, h: <}
   - H
   - ','
   - .
-  - /
+  - {t: /, h: RSHFT}
   - DEV TOOLS
   - SCRL SLOW
-  - '&td_lt'
+  - L CLK
   - {t: SPACE, h: NUM}
   - {t: RETURN, h: NAV}
   - {t: BACK SPACE, h: SYM}
   NUM:
-  - {t: ▽, type: trans}
+  - ''
   - CAPS
-  - VOL UP
+  - Ctl+Sft+ 0
+  - Ctl+Sft+ 1
+  - Ctl+Sft+ 2
   - ''
-  - ''
-  - BRI UP
   - /
   - {t: '7', h: F7}
   - {t: '8', h: F8}
   - {t: '9', h: F9}
   - {t: '-', h: F10}
   - ''
-  - {t: ▽, type: trans}
-  - Gui+ Z
-  - VOL DN
   - ''
+  - Gui+ Z
+  - '&glog'
+  - '&ghard'
   - BACK SPACE
-  - BRI DN
+  - '&gcheckout'
   - '*'
   - {t: '4', h: F4}
   - {t: '5', h: F5}
   - {t: '6', h: F6}
   - {t: +, h: F11}
-  - {t: ▽, type: trans}
   - ''
-  - MUTE
+  - ''
+  - Gui+ A
   - Gui+ X
   - Gui+ C
   - Gui+ V
-  - TAB
+  - Gui+ TAB
   - '0'
   - {t: '1', h: F1}
-  - {t: '2', h: F2}
-  - {t: '3', h: F3}
+  - {t: '2', h: ','}
+  - {t: '3', h: .}
   - {t: '=', h: DEV TOOLS}
   - ''
-  - ''
+  - RETURN
   - ''
   - {type: held}
-  - .
-  - ','
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   NAV:
   - ''
   - {t: ▽, type: trans}
+  - VOL UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - BRI UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Gui+ F, h: Gui+Sft+ F}
+  - Ctl+Sft+ 0
   - {t: ▽, type: trans}
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOL DN
+  - HSPLIT
+  - VSPLIT
+  - BRI DN
   - DARW
   - RARW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+ A
+  - Gui+ Z
   - {t: ▽, type: trans}
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - UARW
   - LARW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+ V
+  - Gui+ C
+  - Gui+ X
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -144,8 +144,8 @@ layers:
   - '!'
   - '@'
   - '#'
-  - (
-  - '['
+  - )
+  - ']'
   - '|'
   - '-'
   - '='
@@ -156,8 +156,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '{'
-  - Sft+ ,
+  - '}'
+  - '>'
   - {t: ▽, type: trans}
   - _
   - +
