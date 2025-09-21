@@ -79,7 +79,8 @@
             quick-tap-ms = <160>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
             require-prior-idle-ms = <185>; // like quick-tap-ms however it will apply for any non-modifier key pressed before it
             bindings = <&kp>, <&kp>;
-  // hold, tap
+
+            // hold, tap
         };
 
         hmsh: homerow_mod_short {
@@ -90,14 +91,16 @@
             quick-tap-ms = <120>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
             require-prior-idle-ms = <145>; // like quick-tap-ms however it will apply for any non-modifier key pressed before it
             bindings = <&kp>, <&kp>;
-  // hold, tap
+
+            // hold, tap
         };
 
         td_cursor: td_scroll_or_cursor {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&lt 9 ESC>, <&mkp RCLK>;
- // hold, tap, double_tap
+
+            // hold, tap, double_tap
         };
 
         hm_s: homerow_mod_special {
@@ -128,7 +131,8 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&to 0>, <&to 5>, <&to 4>;
- // tap, double_tap, tripple_tap
+
+            // tap, double_tap, tripple_tap
         };
 
         td_clk_scrl: td_click_or_scroll {
@@ -136,7 +140,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <195>;
             bindings = <&mkp RCLK>, <&mo 9>;
-  // tap/hold, double_tap
+
+            // tap/hold, double_tap
         };
 
         td_rbck: td_right_bracket {
@@ -239,7 +244,7 @@
         BASE {
             bindings = <
 &to 0            &kp Q          &kp W       &mt LC(LS(LALT)) F  &hm ESC P     &kp G          &kp J         &kp L             &hm LG(F) U        &hm LG(R) Y       &hm LG(S) SEMI    &td_layers
-&hm LCMD TAB     &kp A          &hm LALT S  &hm LCTRL R         &hm_s LGUI T  &hm LPAR D     &hm LBKT M    &hm_right LGUI N  &hm_right LCTRL E  &hm_right LALT I  &kp O             &mt DEL DEL
+&hm LCMD TAB     &kp A          &hm LALT S  &hm LCTRL R         &hm_s LGUI T  &hm LPAR D     &hm LBKT M    &hm_right LGUI N  &hm_right LCTRL E  &hm_right LALT I  &kp O             &mt DEL LA(DEL)
 &kp C_AC_SEARCH  &hmsh LSHFT Z  &kp X       &kp C               &td_vt        &hm LBRC B     &hm LT K      &kp H             &kp COMMA          &kp DOT           &hmsh RSHFT FSLH  &kp F12
                                             &td_cursor          &mkp LCLK     &lt 1 SPACE    &lt 2 RETURN  &lt 3 BACKSPACE
             >;

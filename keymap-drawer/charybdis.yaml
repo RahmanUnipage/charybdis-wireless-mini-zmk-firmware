@@ -24,7 +24,7 @@ layers:
   - {t: E, h: LCTRL}
   - {t: I, h: LALT}
   - O
-  - DEL
+  - {t: Alt+ DEL, h: DEL}
   - SEARCH
   - {t: Z, h: LSHFT}
   - X
