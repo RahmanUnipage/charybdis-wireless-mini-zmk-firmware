@@ -243,19 +243,19 @@
 
         BASE {
             bindings = <
-&to 0            &kp Q          &kp W       &mt LC(LS(LALT)) F  &hm ESC P     &kp G          &kp J         &kp L             &hm LG(F) U        &hm LG(R) Y       &hm LG(S) SEMI    &td_layers
-&hm LCMD TAB     &kp A          &hm LALT S  &hm LCTRL R         &hm_s LGUI T  &hm LPAR D     &hm LBKT M    &hm_right LGUI N  &hm_right LCTRL E  &hm_right LALT I  &kp O             &mt DEL LA(DEL)
-&kp C_AC_SEARCH  &hmsh LSHFT Z  &kp X       &kp C               &td_vt        &hm LBRC B     &hm LT K      &kp H             &kp COMMA          &kp DOT           &hmsh RSHFT FSLH  &kp F12
-                                            &td_cursor          &mkp LCLK     &lt 1 SPACE    &lt 2 RETURN  &lt 3 BACKSPACE
+&kt TAB                        &kp Q  &kp W  &kp E         &kp R      &kp T          &kp Y       &kp U          &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&mt LEFT_SHIFT LA(LEFT_SHIFT)  &kp A  &kp S  &kp D         &kp F      &kt G          &kp H       &kp J          &kp K      &kp L    &kp SEMICOLON  &kp APOS
+&kp LEFT_CONTROL               &kp Z  &kp X  &kp C         &kp V      &kp B          &kp N       &kp M          &kp COMMA  &kp DOT  &kp SLASH      &kp RIGHT_BRACKET
+                                             &kp LEFT_WIN  &mkp LCLK  &lt 1 SPACE    &kp RETURN  &kp BACKSPACE
             >;
         };
 
         NUM {
             bindings = <
-&none  &kp CAPS   &kp LC(LS(N0))  &kp LC(LS(N1))  &kp LC(LS(N2))  &none          &kp SLASH  &hm F7 N7  &hm F8 N8     &hm F9 N9   &hm F10 MINUS  &none
-&none  &kp LG(Z)  &glog           &ghard          &kp BACKSPACE   &gcheckout     &kp ASTRK  &hm F4 N4  &hm F5 N5     &hm F6 N6   &hm F11 PLUS   &none
-&none  &kp LG(A)  &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp LG(TAB)    &kp N0     &hm F1 N1  &hm COMMA N2  &hm DOT N3  &hm F12 EQUAL  &none
-                                  &kp RETURN      &none           &none          &trans     &trans
+&kp LA(LEFT_CONTROL)               &bt BT_NXT                 &kp ESCAPE       &mkp RCLK     &msc MOVE_Y(20)   &mkp MCLK    &kp N7        &kp N8         &kp N9        &kp N0            &kp TILDE          &kp DEL
+&kp LEFT_SHIFT                     &msc SCRL_LEFT             &msc SCRL_RIGHT  &kp UP_ARROW  &msc MOVE_Y(-20)  &mkp MB4     &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp MINUS         &kp PLUS           &kp EQUAL
+&mt LS(LEFT_CONTROL) LEFT_CONTROL  &mt LS(LEFT_ALT) LEFT_ALT  &kp LEFT         &kp DOWN      &kp RIGHT         &mkp MB5     &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &to 4
+                                                                               &trans        &none             &kp SPACE    &kp RET       &kp BACKSPACE
             >;
         };
 
@@ -279,10 +279,10 @@
 
         GAME {
             bindings = <
-&kp N1  &kp TAB    &kp Q  &kp W  &kp E      &kp R           &none  &none  &none  &none  &none  &none
-&kp N2  &kp LCTRL  &kp A  &kp S  &kp D      &kp F           &none  &none  &none  &none  &none  &none
-&kp N3  &kp LSHFT  &kp Z  &kp X  &kp C      &kp V           &none  &none  &none  &none  &none  &none
-                          &none  &kp SPACE  &kp LEFT_ALT    &none  &none
+&kp N1  &kp TAB    &kp Q  &kp W         &kp E      &kp R      &none  &none  &none  &none  &none  &none
+&kp N2  &kp LCTRL  &kp A  &kp S         &kp D      &kp F      &none  &none  &none  &none  &none  &none
+&kp N3  &kp LSHFT  &kp Z  &kp X         &kp C      &kp V      &none  &none  &none  &none  &none  &to 0
+                          &kp LEFT_ALT  &kp SPACE  &kp RET    &none  &none
             >;
         };
 

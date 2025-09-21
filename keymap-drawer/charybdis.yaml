@@ -1,89 +1,89 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
-  - {t: BASE, h: toggle}
+  - {t: TAB, h: toggle}
   - Q
   - W
-  - {t: F, h: Ctl+Sft+ LALT}
-  - {t: P, h: ESC}
-  - G
-  - J
-  - L
-  - {t: U, h: Gui+ F}
-  - {t: Y, h: Gui+ R}
-  - {t: ;, h: Gui+ S}
-  - L_BASE L_PHOTO L_GAME
-  - {t: TAB, h: LCMD}
-  - A
-  - {t: S, h: LALT}
-  - {t: R, h: LCTRL}
-  - {t: T, h: LGUI}
-  - {t: D, h: (}
-  - {t: M, h: '['}
-  - {t: N, h: LGUI}
-  - {t: E, h: LCTRL}
-  - {t: I, h: LALT}
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
   - O
-  - {t: Alt+ DEL, h: DEL}
-  - SEARCH
-  - {t: Z, h: LSHFT}
+  - P
+  - '['
+  - {t: Alt+ LEFT SHIFT, h: LEFT SHIFT}
+  - A
+  - S
+  - D
+  - F
+  - {t: G, h: toggle}
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LEFT CONTROL
+  - Z
   - X
   - C
-  - '&td_vt'
-  - {t: B, h: '{'}
-  - {t: K, h: <}
-  - H
+  - V
+  - B
+  - N
+  - M
   - ','
   - .
-  - {t: /, h: RSHFT}
-  - DEV TOOLS
-  - SCRL SLOW
+  - /
+  - ']'
+  - LEFT WIN
   - L CLK
   - {t: SPACE, h: NUM}
-  - {t: RETURN, h: NAV}
-  - {t: BACK SPACE, h: SYM}
-  NUM:
-  - ''
-  - CAPS
-  - Ctl+Sft+ 0
-  - Ctl+Sft+ 1
-  - Ctl+Sft+ 2
-  - ''
-  - /
-  - {t: '7', h: F7}
-  - {t: '8', h: F8}
-  - {t: '9', h: F9}
-  - {t: '-', h: F10}
-  - ''
-  - ''
-  - Gui+ Z
-  - '&glog'
-  - '&ghard'
-  - BACK SPACE
-  - '&gcheckout'
-  - '*'
-  - {t: '4', h: F4}
-  - {t: '5', h: F5}
-  - {t: '6', h: F6}
-  - {t: +, h: F11}
-  - ''
-  - ''
-  - Gui+ A
-  - Gui+ X
-  - Gui+ C
-  - Gui+ V
-  - Gui+ TAB
-  - '0'
-  - {t: '1', h: F1}
-  - {t: '2', h: ','}
-  - {t: '3', h: .}
-  - {t: '=', h: DEV TOOLS}
-  - ''
   - RETURN
+  - BACK SPACE
+  NUM:
+  - Alt+ LEFT CONTROL
+  - BT NXT
+  - ESCAPE
+  - R CLK
+  - '&msc MOVE_Y(20)'
+  - M CLK
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '~'
+  - DEL
+  - LEFT SHIFT
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_RIGHT'
+  - UP ARROW
+  - '&msc MOVE_Y(-20)'
+  - BACK
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - +
+  - '='
+  - {t: LEFT CONTROL, h: Sft+ LEFT CONTROL}
+  - {t: LEFT ALT, h: Sft+ LEFT ALT}
+  - LEFT
+  - DOWN
+  - RIGHT
+  - FWD
+  - '1'
+  - '2'
+  - '3'
+  - '['
+  - ']'
+  - {t: GAME, h: toggle}
+  - {t: ▽, type: trans}
   - ''
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: SPACE, type: held}
+  - RET
+  - BACK SPACE
   NAV:
   - ''
   - {t: ▽, type: trans}
@@ -124,7 +124,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
   - ''
@@ -167,9 +167,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  GAME: ['1', TAB, Q, W, E, R, '', '', '', '', '', '', '2', LCTRL, A, S, D, F, '', '', '', '', '', '', '3', LSHFT, Z, X, C, V, '', '', '', '', '', '', '', SPACE,
-    LEFT ALT, '', '']
+  - {t: ▽, type: trans}
+  GAME:
+  - '1'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '2'
+  - LCTRL
+  - A
+  - S
+  - D
+  - F
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '3'
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BASE, h: toggle}
+  - LEFT ALT
+  - SPACE
+  - RET
+  - ''
+  - ''
   PHOTOS:
   - {t: ▽, type: trans}
   - TAG Z
